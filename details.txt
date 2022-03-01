@@ -1,0 +1,76 @@
+//Readme
+
+After Extraction You will get 9 .py python files
+
+1. client.py
+	This file contains the program to be run at the client side after executing server.py file so that
+	server should start.
+	socket and json have been imported for networking between client and server
+	rest all imported files are present in the zip folder
+
+	Firstly it take message, secret_key, client public key as  input.
+	It call RSA_KEY_GENERATION .py module to generate private key for client.
+	 
+	Requests Server for its public key
+	Encrypt Secret Key Using Server Public Key using RSA
+	Encrypt Message with Secret Key using AES Encryption Algorithm to get Ciphertext
+	Use Message in Hash ALgorithm to create Digest
+	Use Digest, Client Private Key in RSA Algorithm to create Client Signature
+	Arranging the data in dictionary and Sending it to Server
+	
+	Then it closes the socket.
+2.Server.py
+	Same modules imported as in client.py
+	Request from Client for Server Public Key
+	Ask For RSA Key Generation Parameters
+	Arranging the data in dictionary and Sending it to Client on requesting
+	Receiving the data from Client
+	Decrypt Encrypted Secret Key using Server Private Key using RSA Algorithm and get Secret Key
+	Decrypt Ciphertext using Secret Key in AES Decryption Algorithm to get Message
+	Use Message in Hash Algorithm to make Digest
+	Use Client Signature, Client Public Key to create Signature
+	Verifying Signature with created Signature
+  	 Closing the connection
+3.hash.py 
+	it imports hashlib package which has md5 function which is used as a hash function to calculatemessage digest
+
+4.inverse.py
+	it returns the inverse of a number 'a' with mod 'm'
+5.phi_value.py
+	it calculate the phi value of a number used by Euclid.
+6.RSA_ALGO.py
+	it calculates message to the power key with mod n
+7. rsa_key_generation.py
+	it calculates private key from the public key
+8.aes_encryption.py
+	it encrypts the message using aes varient mentioned in the pdf of the assignment
+9.aes_decryption.py
+	it decrypts the message using aes varient mentioned in the pdf of the assignment
+
+both aes_encryption and aes_decryption contains same functions in the code.
+
+mult(p1,p2)
+	Function to multiply two polynomials in GF(2^4) i.e. x^4+x+1
+
+IntToVec(n)
+	Function to convert the integer into state vector
+
+VecToInt(n)
+	Function to convert the state vector back to integer
+
+AddRoundKey(s1,s2)
+	XORing state with Key in GF(2^4)
+SubNib(sbox,s)
+	Nibble Substitution
+ShiftRows(s)
+	Shift Rows of state
+SubNibRotNib(b)
+	Swapping each nibble (RotNib) and substituting it using s-box (SubNib)
+Key Expansion
+	Uses algorithm in pdf of aes_varient for key expansion
+Mix Column
+	Algorithm in Pdf for Mix Column
+
+aes_encrypt/aes_decrypt
+	Function to Encrypt/Decrypt the Ciphertext received from Client
+	
