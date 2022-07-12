@@ -1,5 +1,5 @@
 # NetworkSecurity
-Create a client and server application to provide confidentiality, authentication and integrity using the concepts discussed in the course. To encrypt a message the client is using a simplified AES variant with 2 rounds. The client then sends ciphertext and key to
+A client and server application to provide confidentiality, authentication and integrity using the concepts discussed in the course. To encrypt a message the client is using a simplified AES variant with 2 rounds. The client then sends ciphertext and key to
 the server. Server on receiving the encrypted message decrypts the message. The process of encryption is explained in the attached AES variant file(AES_Variant). Two examples of this AES variant are given in attached files (Example_1 and Example_2).
 Implement the RSA algorithm from scratch that will be used for secret key encryption and digital signature. For Message digest creation you may use any existing implementation of hash algorithm compatible with your program. Working of the secure system will be as follows:
 
