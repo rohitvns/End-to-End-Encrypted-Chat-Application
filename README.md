@@ -1,7 +1,7 @@
 # NetworkSecurity
-A client and server application to provide confidentiality, authentication and integrity using the concepts discussed in the course. To encrypt a message the client is using a simplified AES variant with 2 rounds. The client then sends ciphertext and key to
-the server. Server on receiving the encrypted message decrypts the message. The process of encryption is explained in the attached AES variant file(AES_Variant). Two examples of this AES variant are given in attached files (Example_1 and Example_2).
-Implement the RSA algorithm from scratch that will be used for secret key encryption and digital signature. For Message digest creation you may use any existing implementation of hash algorithm compatible with your program. Working of the secure system will be as follows:
+A client and server application to provide confidentiality, authentication and integritys. To encrypt a message the client is using a simplified AES variant with 2 rounds. The client then sends ciphertext and key to
+the server. Server on receiving the encrypted message decrypts the message.
+Implemention of RSA algorithm from scratch that will be used for secret key encryption and digital signature. For Message digest creation "MD5" has been used for the implementation of hash algorithm . Working of the secure system is as follows:
 
 ![alt text](https://github.com/rohitvns/NetworkSecurity/blob/4ff566ffd9a7caf8478078b592f22ad6dd12c59a/Untitled%20presentation-1.jpg)
 
