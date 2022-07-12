@@ -15,14 +15,14 @@ o Client sends Ciphertext, Encrypted secret key, Client Signature, Client public
 key.
 
 • Client side computation:
-o Create Client signature through RSA algorithm, taking Digest from Hash
+Creation of Client signature through RSA algorithm, taking Digest from Hash
 algorithm and client private key as input.
-o Create Ciphertext through the AES variant, taking Message and Secret key as
+Creation of Ciphertext through the AES variant, taking Message and Secret key as
 input.
-o Encrypt Secret key with RSA algorithm, taking Secret key and Server Public
+Encryption of the Secret key with RSA algorithm, taking Secret key and Server Public
 key as input.
 • Server side Computation:
-o Decrypt Secret key using RSA algorithm
-o Decrypt ciphertext using AES variant
-o Create message digest
-o Verify Client Signature
+Decryption of Secret key using RSA algorithm
+Decrypttion of ciphertext using AES variant
+Creation of message digest
+Verification of Client Signature
