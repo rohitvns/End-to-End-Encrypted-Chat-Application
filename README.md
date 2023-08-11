@@ -3,7 +3,7 @@ A client and server application to provide confidentiality, authentication and i
 the server. Server on receiving the encrypted message decrypts the message.
 Implemention of RSA algorithm from scratch that will be used for secret key encryption and digital signature. For Message digest creation "MD5" has been used for the implementation of hash algorithm . Working of the secure system is as follows:
 
-![alt text](https://github.com/rohitvns/NetworkSecurity/blob/4ff566ffd9a7caf8478078b592f22ad6dd12c59a/Untitled%20presentation-1.jpg)
+![alt text](https://github.com/rohitvns/End-to-End-Encrypted-Chat-Application/blob/main/Untitled%20presentation-1.jpg)
 
 • Client inputs: Message, parameter for key generation (p, q, e) at Client end
 • Server Inputs: parameter for key generation (p, q, e) at Server end.
